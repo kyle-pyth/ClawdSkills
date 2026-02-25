@@ -1,0 +1,21 @@
+{
+  "name": "Simple / New Workspace",
+  "description": "Self-contained setup for workspaces without existing structure.",
+  "detection": [],
+  "config": {
+    "workspaceType": "simple",
+    "stateDir": "./.project-state",
+    "projectsDir": "./.project-state/projects",
+    "stateLocation": "separate",
+    "stateFileName": "STATE.md",
+    "activeFile": "./.project-state/ACTIVE.md",
+    "registryFile": "./.project-state/REGISTRY.md",
+    "autoSave": {
+      "onCheckpoint": true,
+      "onPause": true,
+      "onManual": true,
+      "onDecision": true
+    },
+    "loadActiveOnStart": true
+  }
+}

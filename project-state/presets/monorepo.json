@@ -1,0 +1,21 @@
+{
+  "name": "Monorepo",
+  "description": "For monorepos with packages/, apps/, or similar structure.",
+  "detection": ["packages/", "apps/", "lerna.json", "pnpm-workspace.yaml"],
+  "config": {
+    "workspaceType": "monorepo",
+    "stateDir": "./state",
+    "projectsDir": "./packages",
+    "stateLocation": "separate",
+    "stateFileName": "STATE.md",
+    "activeFile": "./state/ACTIVE.md",
+    "registryFile": "./state/REGISTRY.md",
+    "autoSave": {
+      "onCheckpoint": true,
+      "onPause": false,
+      "onManual": true,
+      "onDecision": false
+    },
+    "loadActiveOnStart": true
+  }
+}

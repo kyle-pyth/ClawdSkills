@@ -1,0 +1,13 @@
+# User-specific state (don't commit actual project data)
+/state/
+*.local.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

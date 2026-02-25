@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "workspaceType": "auto",
+  "stateDir": "./state",
+  "projectsDir": "./projects",
+  "stateLocation": "with-projects",
+  "stateFileName": "STATE.md",
+  "decisionsFileName": "DECISIONS.md",
+  "activeFile": "./state/ACTIVE.md",
+  "registryFile": "./state/REGISTRY.md",
+  "autoSave": {
+    "onCheckpoint": true,
+    "onPause": true,
+    "onManual": true,
+    "onDecision": true,
+    "onInterval": false,
+    "intervalMinutes": 60,
+    "minIntervalSeconds": 60
+  },
+  "loadActiveOnStart": true,
+  "maxActiveProjects": 7,
+  "maxStateSizeKb": 100,
+  "maxEntriesPerSection": 50,
+  "scan": {
+    "maxDepth": 3,
+    "timeoutSeconds": 10,
+    "excludePatterns": [
+      ".env*",
+      "*.key",
+      "*.pem",
+      "*credentials*",
+      "*secret*",
+      ".git",
+      ".clawdbot",
+      "node_modules",
+      "__pycache__",
+      ".ssh",
+      ".config",
+      "secrets"
+    ]
+  },
+  "initialized": null
+}

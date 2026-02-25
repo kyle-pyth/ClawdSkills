@@ -1,0 +1,21 @@
+{
+  "name": "Clawdbot Standard",
+  "description": "Optimized for Clawdbot workspaces with AGENTS.md, projects/, memory/, etc.",
+  "detection": ["AGENTS.md", "SOUL.md"],
+  "config": {
+    "workspaceType": "clawdbot",
+    "stateDir": "./state",
+    "projectsDir": "./projects",
+    "stateLocation": "with-projects",
+    "stateFileName": "STATE.md",
+    "activeFile": "./state/ACTIVE.md",
+    "registryFile": "./state/REGISTRY.md",
+    "autoSave": {
+      "onCheckpoint": true,
+      "onPause": true,
+      "onManual": true,
+      "onDecision": true
+    },
+    "loadActiveOnStart": true
+  }
+}
