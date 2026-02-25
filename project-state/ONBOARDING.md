@@ -411,3 +411,52 @@ The skill only needs:
 - [x] Time-limit the scan (10 second timeout)
 - [x] Max depth of 3 levels
 - [x] Skip hidden directories (`.git/`, `.clawdbot/`, etc.)
+
+---
+
+## Updates Configuration
+
+During onboarding, ask user about update preferences:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔄 UPDATE PREFERENCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+How would you like to handle skill updates?
+
+  [A] Check for updates on session start (notify only) ← default
+  [B] Auto-update when new version available
+  [C] Manual only (I'll update myself)
+
+Your choice (Enter for default): _
+```
+
+### Update Commands
+
+| Command | Action |
+|---------|--------|
+| `check skill updates` | Check GitHub for new version |
+| `update project-state skill` | Pull latest from repo |
+| `skill version` | Show current version |
+
+### How Updates Work
+
+1. **Check:** Compare local `currentVersion` in config.json with repo's SKILL.md version
+2. **Notify:** If newer version exists, mention at session start
+3. **Update:** Pull latest files from GitHub, preserve user's config.json
+
+### Config Options
+
+```json
+{
+  "updates": {
+    "checkOnStart": true,       // Check for updates each session
+    "autoUpdate": false,        // Auto-pull updates (use with caution)
+    "repo": "kyle-pyth/ClawdSkills",
+    "skillPath": "project-state",
+    "lastCheck": "2026-02-25",
+    "currentVersion": "1.0.0"
+  }
+}
+```

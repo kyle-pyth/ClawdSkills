@@ -2,6 +2,9 @@
 
 > Never lose context again. Track projects, decisions, and blockers for seamless session recovery.
 
+**Version:** 1.0.0  
+**Repository:** https://github.com/kyle-pyth/ClawdSkills/tree/main/project-state
+
 ## Overview
 
 AI assistants lose context between sessions. This skill creates a lightweight system to:

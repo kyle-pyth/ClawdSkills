@@ -39,5 +39,13 @@
       "secrets"
     ]
   },
-  "initialized": null
+  "initialized": null,
+  "updates": {
+    "checkOnStart": true,
+    "autoUpdate": false,
+    "repo": "kyle-pyth/ClawdSkills",
+    "skillPath": "project-state",
+    "lastCheck": null,
+    "currentVersion": "1.0.0"
+  }
 }
